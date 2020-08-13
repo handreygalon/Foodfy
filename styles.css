@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 
+:root {
+    --color-banner: #fbdfdb;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,11 +30,25 @@ header div a:hover {
 }
 
 .banner {
-    background-color: #fbdfdb;
+    background-color: var(--color-banner);
     border-radius: 30px;
-    padding: 35px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    position: relative;
+    padding: 35px 35px 0px 35px;
+    margin: 0 auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banner_text h1 {
+    padding: 60px 0 10px 0;
+}
+
+.banner_text p {
+    max-width: 60%;
+    padding: 20px 0;
+    line-height: 28px;
+}
+
+.banner_img {
+    text-align: center;
 }
