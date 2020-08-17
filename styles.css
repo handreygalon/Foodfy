@@ -9,6 +9,7 @@
     padding: 0;
     border: 0
 }
+
 body {
     background: white;
     color: black;
@@ -16,6 +17,8 @@ body {
 }
 header {
     padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 header div a {
     color: black;
@@ -28,6 +31,11 @@ header div a:hover {
     color: blue;
     transition: color 200ms;
 }
+.header_logo {
+    padding: 0 0 0 33%;
+    width: 90.6px;
+    height: 26.9px;
+}
 
 .banner {
     background-color: var(--color-banner);
@@ -38,17 +46,14 @@ header div a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 .banner_text h1 {
     padding: 60px 0 10px 0;
 }
-
 .banner_text p {
-    max-width: 60%;
+    max-width: 290px;
     padding: 20px 0;
     line-height: 28px;
 }
-
 .banner_img {
     text-align: center;
 }
