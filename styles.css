@@ -2,6 +2,8 @@
 
 :root {
     --color-banner: #fbdfdb;
+    --color-background-footer: #eeeeee;
+    --color-text-footer: #999999;
 }
 
 * {
@@ -55,5 +57,20 @@ header div a:hover {
     line-height: 28px;
 }
 .banner_img {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--color-background-footer);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer p {
+    padding: 15px;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-text-footer);
     text-align: center;
 }
