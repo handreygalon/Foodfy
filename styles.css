@@ -105,3 +105,25 @@ footer p {
 #recipe-author {
     color: var(--color-text-footer);
 }
+
+/* --- ABOUT --- */
+.description {
+    width: 75%;
+    margin: 0 auto;
+    background-color: var(--color-banner);
+    border-radius: 20px;
+    padding: 20px;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+.description h1 {    
+    font-weight: 700;
+    padding: 20px 0;
+}
+.description h2 {
+    font-weight: 700i;
+    padding: 20px 0;
+}
+.description p {
+    padding: 10px 0;
+}
