@@ -2,17 +2,19 @@
 <html>
     <head>
         <title>Foodfy</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
         <header>
-            <a href="/"><img src="/assets/logo.png" class="header_logo" alt="Logo Foodfy"></a>                
-            <div class="header_links">                
-                <a href="/">Sobre</a>
-                <a href="/">Receitas</a>
-            </div>
-        </header>
+            <a href="index.html"><img src="/assets/logo.png" class="header_logo" alt="Logo Foodfy"></a>                
+            <nav class="topnav">
+                <a href="about.html">Sobre</a>
+                <a href="recipes.html">Receitas</a>
+            </nav>
+        </header> 
 
         <section class="recipes">
 
@@ -77,6 +79,18 @@
             </div>
             
         </section>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <a class="close-modal">
+                    <span class="material-icons">close</span>
+                </a>
+            </div>
+
+            <div class="modal-content">
+                <!-- Recipes here -->
+            </div>
+        </div>
 
     </body>
 </html>
