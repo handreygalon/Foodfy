@@ -167,10 +167,12 @@ footer p {
     opacity: 1;
     visibility: visible;
 }
-.modal-img {
+.modal .modal-content .modal-img {
     width: 80%;
-    margin: 0 auto;
     top: 5vh;
     border-radius: 15px;
     position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
