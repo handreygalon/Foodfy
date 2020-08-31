@@ -151,7 +151,7 @@ footer p {
     background-color: white;
     border-radius: 16px;
     width: 60%;
-    height: 60%;
+    height: 70%;
     margin: 5vh auto;
     position: relative;    
 }
@@ -175,4 +175,23 @@ footer p {
     left: 0;
     right: 0;
     margin: auto;
+}
+.modal .modal-content .recipe-title-modal {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 53vh;
+    bottom: 5vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.modal .modal-content .recipe-author-modal {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text-footer);
+    position: absolute;
+    top: 57vh;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
