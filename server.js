@@ -2,10 +2,11 @@ const express = require('express')
 const nunjucks = require('nunjucks')
 
 const server = express()
+const recipes = require("./data")
 
 server.use(express.static('public'))
 
-server.set("view engine", "html")
+server.set("view engine", "njk")
 
 nunjucks.configure("views", {
     express: server
@@ -16,7 +17,7 @@ server.get("/", function(req, res) {
 })
 
 server.get("/recipes", function(req, res) {
-    return res.render("recipes")
+    return res.render("recipes", { items: recipes })
 })
 
 server.get("/about", function(req, res) {

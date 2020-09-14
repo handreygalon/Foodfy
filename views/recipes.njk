@@ -1,0 +1,44 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Foodfy - Receitas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+{% endblock %}
+
+{% block content %}
+
+    <section class="recipes">
+
+        {% for item in items %}
+
+        <div class="recipe" id="{{item.id}}">
+            <div class="recipe__image-container">
+                <img src="/assets/{{item.id}}.png" alt="{{item.title}}">
+            </div>
+            <div class="recipe__content">
+                <p id="recipe-title">{{item.title}}</p>
+                <p id="recipe-author">por {{item.author}}</p>
+            </div>
+        </div>
+
+        {% endfor %}
+        
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <a class="close-modal">
+                <span class="material-icons">close</span>
+            </a>
+
+            <div class="modal-content">
+                <img src="" alt="teste" class="modal-img">
+                <p class="recipe-title-modal">Asinhas de frango ao barbecue</p>
+                <p class="recipe-author-modal">por Vania Steroski</p>
+            </div>
+        </div>            
+    </div>
+
+    <script src="scripts.js"></script>
+
+{% endblock %}
