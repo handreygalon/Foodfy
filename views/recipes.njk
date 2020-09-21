@@ -15,6 +15,11 @@
             <div class="recipe__image-container">
                 <img src="/assets/{{item.id}}.png" alt="{{item.title}}">
             </div>
+
+            {% if item.featured %}
+                <div class="featured">Featured</div>
+            {% endif %}
+
             <div class="recipe__content">
                 <p id="recipe-title">{{item.title}}</p>
                 <p id="recipe-author">por {{item.author}}</p>
